@@ -2,7 +2,7 @@
     {
       "kernelSource": {
         "name": "XiaomiPad6",
-        "repo": "https://github.com/ltdq/android_kernel_xiaomi_sm8250",
+        "repo": "https://github.com/UtsavBalar1231/kernel_xiaomi_sm8250/",
         "branch": "pipa-t-oss",
         "device": "pipa",
         "defconfig": "vendor/pipa_user_defconfig"
@@ -25,7 +25,6 @@
         "CC": "clang",
         "LLVM": "1",
         "externalCommands": {
-          "CLANG_TRIPLE": "aarch64-linux-gnu-",
           "CROSS_COMPILE": "aarch64-linux-gnu-",
           "CROSS_COMPILE_COMPAT": "arm-linux-gnueabi-",
           "LINUX_GCC_CROSS_COMPILE_PREBUILTS_BIN": "prebuilts/gas/linux-x86",
