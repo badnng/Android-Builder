@@ -85,14 +85,6 @@ jobs:
         uses: actions/checkout@v4
 
       # Install prerequisites for Ubuntu
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Replace default Ubuntu source
-        run: |
-          sed -i 's@http://security.ubuntu.com/ubuntu/@https://mirrors.tuna.tsinghua.edu.cn/ubuntu/@g' /etc/apt/sources.list
-          sed -i 's@http://archive.ubuntu.com/ubuntu/@https://mirrors.tuna.tsinghua.edu.cn/ubuntu/@g' /etc/apt/sources.list
-
       - name: ⭐ Install prerequisites
         run: |
           sudo apt-get update
