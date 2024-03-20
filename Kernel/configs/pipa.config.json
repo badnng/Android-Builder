@@ -2,8 +2,8 @@
     {
       "kernelSource": {
         "name": "XiaomiPad6",
-        "repo": "https://github.com/KakatkarAkshay/kernel_xiaomi_pipa",
-        "branch": "thirteen",
+        "repo": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource",
+        "branch": "pipa-t-oss",
         "device": "pipa",
         "defconfig": "vendor/pipa_user_defconfig"
       },
