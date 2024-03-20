@@ -28,8 +28,6 @@
           "CROSS_COMPILE_COMPAT": "arm-linux-gnueabi-",
           "LINUX_GCC_CROSS_COMPILE_PREBUILTS_BIN": "prebuilts/gas/linux-x86",
           "LINUX_GCC_CROSS_COMPILE_COMPAT_PREBUILTS_BIN": "prebuilts/gas/linux-x86",
-          "LLVM": "1",
-          "DEPMOD": "depmod",
           "LLVM_IAS": "1" 
         }
       },
