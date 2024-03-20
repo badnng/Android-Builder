@@ -10,7 +10,7 @@
       "toolchains": [
         {
           "name": "clang",
-          "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/refs/heads/master-kernel-build-2021/clang-r399163b.tar.gz/",
+          "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/master-kernel-build-2021/clang-r399163b.tar.gz",
           "binaryEnv": ["./bin"]
         },
         {
