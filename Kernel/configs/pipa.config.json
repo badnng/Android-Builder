@@ -2,15 +2,15 @@
     {
       "kernelSource": {
         "name": "XiaomiPad6",
-        "repo": "https://github.com/ltdq/android_kernel_xiaomi_sm8250",
-        "branch": "pipa-t-oss",
+        "repo": "https://github.com/KakatkarAkshay/kernel_xiaomi_pipa",
+        "branch": "thirteen",
         "device": "pipa",
         "defconfig": "vendor/pipa_user_defconfig"
       },
       "toolchains": [
         {
           "name": "clang",
-          "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/master-kernel-build-2021/clang-r399163b.tar.gz",
+          "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/master-kernel-build-2021/clang-r416183b.tar.gz",
           "binaryEnv": ["./bin"]
         },
         {
@@ -27,7 +27,10 @@
           "CROSS_COMPILE": "aarch64-linux-gnu-",
           "CROSS_COMPILE_COMPAT": "arm-linux-gnueabi-",
           "LINUX_GCC_CROSS_COMPILE_PREBUILTS_BIN": "prebuilts/gas/linux-x86",
-          "LINUX_GCC_CROSS_COMPILE_COMPAT_PREBUILTS_BIN": "prebuilts/gas/linux-x86"
+          "LINUX_GCC_CROSS_COMPILE_COMPAT_PREBUILTS_BIN": "prebuilts/gas/linux-x86",
+          "LLVM": "1",
+          "DEPMOD": "depmod",
+          "LLVM_IAS": "1" 
         }
       },
       "AnyKernel3": {
