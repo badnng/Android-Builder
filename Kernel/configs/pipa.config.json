@@ -23,6 +23,7 @@
       "params": {
         "ARCH": "arm64",
         "CC": "clang",
+        "LLVM": "1"
         "externalCommands": {
           "CROSS_COMPILE": "aarch64-linux-gnu-",
           "CROSS_COMPILE_COMPAT": "arm-linux-gnueabi-",
