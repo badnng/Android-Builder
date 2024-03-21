@@ -1,41 +1,43 @@
 [
-    {
-      "kernelSource": {
-        "name": "XiaomiPad6",
-        "repo": "https://github.com/UtsavBalar1231/kernel_xiaomi_sm8250/",
-        "branch": "pipa-t-oss",
-        "device": "pipa",
-        "defconfig": "vendor/pipa_user_defconfig"
+  {
+    "kernelSource": {
+      "name": "XiaomiPad6",
+      "repo": "https://github.com/mackdroid/pipakern",
+      "branch": "pipa-t-oss",
+      "device": "pipa",
+      "defconfig": "vendor/pipa_user_defconfig"
+    },
+    "toolchains": [
+      {
+        "name": "clang",
+        "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/master-kernel-build-2021/clang-r399163b.tar.gz",
+        "binaryEnv": ["./bin"]
       },
-      "toolchains": [
-        {
-          "name": "clang",
-          "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/master-kernel-build-2021/clang-r399163b.tar.gz",
-          "binaryEnv": ["./bin"]
-        },
-        {
-          "name": "gcc",
-          "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/refs/heads/master-kernel-build-2021.tar.gz",
-          "binaryEnv": ["bin"]
-        }
-      ],
-      "enableCcache": true,
-      "params": {
-        "ARCH": "arm64",
-        "CC": "clang",
-        "LLVM": "1",
-        "externalCommands": {
-          "CROSS_COMPILE": "aarch64-linux-gnu-",
-          "CROSS_COMPILE_COMPAT": "arm-linux-gnueabi-",
-          "LINUX_GCC_CROSS_COMPILE_PREBUILTS_BIN": "prebuilts/gas/linux-x86",
-          "LINUX_GCC_CROSS_COMPILE_COMPAT_PREBUILTS_BIN": "prebuilts/gas/linux-x86"
-        }
-      },
-      "AnyKernel3": {
-        "use": true,
-        "release": true
-      },
-      "enableKernelSU": false,
-      "enableLXC": false
-    }
-  ]
+      {
+        "name": "gcc",
+        "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/refs/heads/master-kernel-build-2021.tar.gz",
+        "binaryEnv": ["bin"]
+      }
+    ],
+    "enableCcache": true,
+    "params": {
+      "ARCH": "arm64",
+      "SUBARCH": "arm64",
+      "DTC_EXT": "dtc",
+      "CC": "clang",
+      "REAL_CC": "clang",
+      "externalCommands": {
+        "CROSS_COMPILE": "aarch64-linux-gnu-",
+        "CROSS_COMPILE_COMPAT": "arm-linux-gnueabi-",
+        "LINUX_GCC_CROSS_COMPILE_PREBUILTS_BIN": "prebuilts/gas/linux-x86",
+        "LINUX_GCC_CROSS_COMPILE_COMPAT_PREBUILTS_BIN": "prebuilts/gas/linux-x86"
+      }
+    },
+    "AnyKernel3": {
+      "use": true,
+      "release": true
+    },
+    "enableKernelSU": false,
+    "enableLXC": false
+  }
+]
