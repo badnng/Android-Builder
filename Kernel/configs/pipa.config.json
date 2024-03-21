@@ -2,7 +2,7 @@
   {
     "kernelSource": {
       "name": "XiaomiPad6",
-      "repo": "https://github.com/badnng/Xiaomi_sm8250_pipa_kernel",
+      "repo": "https://github.com/YumeMichi/Xiaomi_Kernel_OpenSource",
       "branch": "pipa-t-oss",
       "device": "pipa",
       "defconfig": "vendor/pipa_user_defconfig"
